@@ -14,13 +14,22 @@
 ```bash
 git clone https://github.com/zeroHYH/SDU_DeepSeek
 cd SDU_DeepSeek
-pip install requests toml rich httpx
-python sduDeepSeekInTerminal.py
+#创建虚拟环境（可选）
+python -m venv venv 
+
+pip install -r requirements.txt
+python main.py
 ```
 
 初次运行需要输入学号、密码和设备指纹（可选）
 
 并在当前目录下生成SDUTAIconfigs.toml用于保存cookie和配置
+
+## 实用注意
+
+如果终端配了代理转发可以关闭，不然请求时间非常长
+
+建议不要使用WSL，可能是DNS、IPv6 有干扰，请求非常慢（一个“你好”，Generated in 131.51 seconds）
 
 ## 鸣谢
 
@@ -38,7 +47,7 @@ python sduDeepSeekInTerminal.py
 
 ## 示例
 
-![](p1.png)
-![](p2.png)
-![](p3.png)
-![](p4.png)
+![](screenshots/p1.png)
+![](screenshots/p2.png)
+![](screenshots/p3.png)
+![](screenshots/p4.png)

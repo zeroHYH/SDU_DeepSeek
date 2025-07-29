@@ -1,5 +1,5 @@
 import re, hashlib, json, httpx, uuid
-from uniform_login_des import strEnc
+from .uniform_login_des import strEnc
 from datetime import datetime, timezone
 
 

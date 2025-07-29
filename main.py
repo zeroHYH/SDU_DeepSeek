@@ -3,7 +3,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 from datetime import datetime, timezone
 from getpass import getpass
-from sdu_aiassist_login import login
+from ulits.sdu_aiassist_login import login
 
 if os.path.exists("SDUTAIconfigs.toml"):
     with open("SDUTAIconfigs.toml", "r") as f:
