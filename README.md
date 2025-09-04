@@ -6,7 +6,7 @@
 
 - 在终端内登录，无需跳转浏览器
 - 可选择模型：DeepSeek v3/r1；可指定是否启用联网搜索功能
-- 可指定设备指纹，免去反复输入短信验证码
+- 使用CAS的RESTful API登录，免去设备验证
 - 优化markdown输出，显示回答时间
 
 ## 食用方法
@@ -18,7 +18,7 @@ pip install requests toml rich httpx
 python sduDeepSeekInTerminal.py
 ```
 
-初次运行需要输入学号、密码和设备指纹（可选）
+初次运行需要输入学号、密码
 
 并在当前目录下生成SDUTAIconfigs.toml用于保存cookie和配置
 
